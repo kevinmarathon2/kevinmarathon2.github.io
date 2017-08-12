@@ -51,10 +51,13 @@ article {
   flex-direction: column;
   font-family: var(--main-font);
   font-size: 22px;
+  color: #cd6a51;
 }
 .smallHeader {
   font-family: var(--second-font);
   font-size: 50px;
+
+  color: #03a9f4;
 }
 
 footer {
