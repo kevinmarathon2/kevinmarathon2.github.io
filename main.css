@@ -65,6 +65,22 @@ footer {
   grid-column: 1 / 4;
 }
 
+.github {
+  font-size: 44px;
+  padding: 20px 0 50px;
+}
+
+.githubContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  font-family: var(--main-font);
+  color: whitesmoke;
+  grid-gap: 10px;
+}
+.githubContainer div {
+  padding: 20px;
+}
+
 .Avatar {
   animation: avatarAnim 1.5s ease;
 }
