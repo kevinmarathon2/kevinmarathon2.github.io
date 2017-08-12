@@ -1,53 +1,92 @@
+:root {
+  --main-bg-color: #282c34;
+  --main-font: 'Raleway', sans-serif;
+  --main-font-size: 22px;
+  --second-font: 'Just Another Hand', cursive;
+}
+
 body {
   text-align: center;
+  background-color: var(--main-bg-color);
+  font-family: var(--second-font);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 150px auto 150px;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 100px auto 53px;
   grid-gap: 1em;
 }
 
-header,
 aside,
 article,
 footer {
-  background: #ccc;
+  background-color: var(--main-bg-color);
   padding: 1em;
 }
 
 header {
-  /* Start on Row 1 */
   grid-row: 1;
-  /* Start on the first column line and extend all the to the last column line */
   grid-column: 1 / 4;
+  font-family: var(--second-font);
+  font-size: 55px;
+  color: whitesmoke;
+  padding: 10px 0px;
 }
 
 .sidebar-left {
-  /* Start on Row 2 */
   grid-row: 2;
-  /* Start on the first column line and stop at the next column line */
   grid-column: 1 / 2;
 }
 
 article {
-  /* Start on Row 2 */
   grid-row: 2;
-  /* Start on the second column line and stop at the third column line */
   grid-column: 2 / 3;
 }
 
 .sidebar-right {
-  /* Start on Row 2 */
   grid-row: 2;
-  /* Start on the third column line and stop at the last column line */
   grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  font-size: 22px;
+}
+.smallHeader {
+  font-family: var(--second-font);
+  font-size: 50px;
 }
 
 footer {
-  /* Start on Row 1 */
   grid-row: 3;
-  /* Start on the first column line and extend all the to the last column line */
   grid-column: 1 / 4;
+}
+
+.Avatar {
+  animation: avatarAnim 4s;
+}
+.aboutmeContainer {
+  animation: aboutmeAnim 4s;
+}
+
+@keyframes avatarAnim {
+  0% {
+    position: relative;
+    left: -300px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes aboutmeAnim {
+  0% {
+    position: relative;
+    left: 300px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
 }
