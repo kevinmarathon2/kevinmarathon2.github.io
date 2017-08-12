@@ -66,30 +66,33 @@ footer {
 }
 
 .Avatar {
-  animation: avatarAnim 4s;
+  animation: avatarAnim 1.5s ease;
 }
 .aboutmeContainer {
-  animation: aboutmeAnim 4s;
+  animation: aboutmeAnim 1.5s ease;
 }
 
 @keyframes avatarAnim {
   0% {
     position: relative;
-    left: -300px;
+
+    transform: translate3d(-300px, 0px, 0px);
   }
   100% {
     position: relative;
-    left: 0px;
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 
 @keyframes aboutmeAnim {
   0% {
     position: relative;
-    left: 300px;
+
+    transform: translate3d(300px, 0px, 0px);
   }
   100% {
     position: relative;
-    left: 0px;
+
+    transform: translate3d(0px, 0px, 0px);
   }
 }
