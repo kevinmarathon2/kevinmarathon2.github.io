@@ -70,7 +70,8 @@ footer {
   padding: 20px 0 50px;
 }
 
-.githubContainer {
+.githubContainer,
+.githubContainer:visited {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   font-family: var(--main-font);
