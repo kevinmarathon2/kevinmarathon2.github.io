@@ -114,3 +114,6 @@ footer {
     transform: translate3d(0px, 0px, 0px);
   }
 }
+a {
+  text-decoration: none;
+}
