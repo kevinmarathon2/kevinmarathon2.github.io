@@ -71,8 +71,9 @@ footer {
 }
 
 .githubContainer,
-.githubContainer:visited {
+.githubContainer a:visited {
   display: grid;
+  text-decoration: none;
   grid-template-columns: 1fr 1fr 2fr;
   font-family: var(--main-font);
   color: whitesmoke;
